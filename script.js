@@ -20,3 +20,6 @@ const getHumanChoice = () => {
     return userChoice.toLowerCase().trim();
 }
 console.log(getHumanChoice());
+
+//initializing the computer score
+let computerScore = 0;
