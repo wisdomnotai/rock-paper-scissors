@@ -19,7 +19,6 @@ const getHumanChoice = () => {
     const userChoice = prompt("Please enter your choice: rock, paper, or scissors: ");
     return userChoice.toLowerCase().trim();
 }
-console.log(getHumanChoice());
 
 //initializing the computer score
 let computerScore = 0;
@@ -58,5 +57,13 @@ const playround = (humanChoice, computerChoice) => {
         return "It's a tie!";
     }
 }
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice(); 
+
+
+//creating the game play function
+const playGame = () => {
+    for (let i = 0; i < 5; i++){
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice(); 
+        console.log(playround(humanSelection, computerSelection));
+    } 
+}
