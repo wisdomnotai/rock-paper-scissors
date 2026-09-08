@@ -24,13 +24,13 @@ const getHumanChoice = () => {
 let computerScore = 0;
 
 //initializing the human score
-let humanscore = 0;
+let humanScore = 0;
 
 //creating the play round function
 
 const playround = (humanChoice, computerChoice) => {
     if (humanChoice === "rock" && computerChoice === "scissors"){
-        humanscore++
+        humanScore++
         return "You win! Rock beats Scissors";
     }
     else if (humanChoice === "rock" && computerChoice === "paper"){
@@ -38,7 +38,7 @@ const playround = (humanChoice, computerChoice) => {
         return "You lose! Paper beats Rock";
     }
     else if (humanChoice === "paper" && computerChoice === "rock"){
-        humanscore++
+        humanScore++
         return "You win! Paper beats Rock";
     }
     else if (humanChoice === "paper" && computerChoice === "scissors"){
@@ -46,7 +46,7 @@ const playround = (humanChoice, computerChoice) => {
         return "You lose! Scissors beats Paper";
     }
     else if (humanChoice === "scissors" && computerChoice === "paper"){
-        humanscore++;
+        humanScore++;
         return "You win! Scissors beats Paper";
     }
     else if (humanChoice === "scissors" && computerChoice === "rock"){
@@ -69,14 +69,14 @@ const playGame = () => {
 }
 
 const finalScore = () => {
-    if (humanscore > computerScore){
-        return `You win the game! Final Score: You: ${humanscore} Computer: ${computerScore}`;
+    if (humanScore > computerScore){
+        return `You win the game! Final Score: You: ${humanScore} Computer: ${computerScore}`;
     }
-    else if (humanscore < computerScore){
-        return `You lose the game! Final Score: You: ${humanscore} Computer: ${computerScore}`;
+    else if (humanScore < computerScore){
+        return `You lose the game! Final Score: You: ${humanScore} Computer: ${computerScore}`;
     }
     else{
-        return `It's a tie! Final Score: You: ${humanscore} Computer: ${computerScore}`;
+        return `It's a tie! Final Score: You: ${humanScore} Computer: ${computerScore}`;
     }
 }
 
