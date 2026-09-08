@@ -13,3 +13,9 @@ const getComputerChoice = () => {
         return "scissors";
     }
 }
+
+//creating the getting user choice function
+const getHumanChoice = () => {
+    const userChoice = prompt("Please enter your choice: rock, paper, or scissors: ");
+    return userChoice.toLowerCase().trim();
+}
