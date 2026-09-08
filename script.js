@@ -19,3 +19,4 @@ const getHumanChoice = () => {
     const userChoice = prompt("Please enter your choice: rock, paper, or scissors: ");
     return userChoice.toLowerCase().trim();
 }
+console.log(getHumanChoice());
