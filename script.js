@@ -26,3 +26,37 @@ let computerScore = 0;
 
 //initializing the human score
 let humanscore = 0;
+
+//creating the play round function
+
+const playround = (humanChoice, computerChoice) => {
+    if (humanChoice === "rock" && computerChoice === "scissors"){
+        humanscore++
+        return "You win! Rock beats Scissors";
+    }
+    else if (humanChoice === "rock" && computerChoice === "paper"){
+        computerScore++
+        return "You lose! Paper beats Rock";
+    }
+    else if (humanChoice === "paper" && computerChoice === "rock"){
+        humanscore++
+        return "You win! Paper beats Rock";
+    }
+    else if (humanChoice === "paper" && computerChoice === "scissors"){
+        computerScore++;
+        return "You lose! Scissors beats Paper";
+    }
+    else if (humanChoice === "scissors" && computerChoice === "paper"){
+        humanscore++;
+        return "You win! Scissors beats Paper";
+    }
+    else if (humanChoice === "scissors" && computerChoice === "rock"){
+        computerScore++;
+        return "You lose! Rock beats Scissors";
+    }
+    else{
+        return "It's a tie!";
+    }
+}
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice(); 
