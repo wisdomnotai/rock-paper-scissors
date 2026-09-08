@@ -23,3 +23,6 @@ console.log(getHumanChoice());
 
 //initializing the computer score
 let computerScore = 0;
+
+//initializing the human score
+let humanscore = 0;
