@@ -67,3 +67,18 @@ const playGame = () => {
         console.log(playround(humanSelection, computerSelection));
     } 
 }
+
+const finalScore = () => {
+    if (humanscore > computerScore){
+        return `You win the game! Final Score: You: ${humanscore} Computer: ${computerScore}`;
+    }
+    else if (humanscore < computerScore){
+        return `You lose the game! Final Score: You: ${humanscore} Computer: ${computerScore}`;
+    }
+    else{
+        return `It's a tie! Final Score: You: ${humanscore} Computer: ${computerScore}`;
+    }
+}
+
+playGame();
+console.log(finalScore());
