@@ -94,3 +94,16 @@ buttons.forEach((button)=> {
     }    
     )
 })
+
+//creating the DOM for updating the scores
+const scoreDiv = document.querySelector("#score");
+const resultsDiv = document.querySelector("#result");
+
+const updatedisplay = (result) =>{
+    resultsDiv.textContent = result;
+    scoreDiv.textContent =  `You: ${humanScore}, Computer: ${computerScore}`;
+    if (humanScore === 5 || computerScore === 5){
+        resultDiv.textContent = finalScore();
+        disableButtons();
+    }
+}
