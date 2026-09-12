@@ -99,7 +99,7 @@ buttons.forEach((button)=> {
 const scoreDiv = document.querySelector("#score");
 const resultsDiv = document.querySelector("#result");
 
-const updatedisplay = (result) =>{
+const updateDisplay = (result) =>{
     resultsDiv.textContent = result;
     scoreDiv.textContent =  `You: ${humanScore}, Computer: ${computerScore}`;
     if (humanScore === 5 || computerScore === 5){
