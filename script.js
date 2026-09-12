@@ -107,3 +107,9 @@ const updatedisplay = (result) =>{
         disableButtons();
     }
 }
+
+const disableButtons = () => {
+    buttons.forEach((button)=>{
+        button.disabled = true;
+    });
+};
