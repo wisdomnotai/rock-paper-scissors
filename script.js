@@ -28,7 +28,7 @@ let humanScore = 0;
 
 //creating the play round function
 
-const playround = (humanChoice, computerChoice) => {
+const playRound = (humanChoice, computerChoice) => {
     if (humanChoice === "rock" && computerChoice === "scissors"){
         humanScore++
         return "You win! Rock beats Scissors";
@@ -58,8 +58,8 @@ const playround = (humanChoice, computerChoice) => {
     }
 }
 
-/*
-//creating the game play function
+
+/*//creating the game play function
 const playGame = () => {
     for (let i = 0; i < 5; i++){
         const humanSelection = getHumanChoice();
@@ -80,11 +80,17 @@ const finalScore = () => {
     }
 }
 
-playGame();
-console.log(finalScore());
+/*playGame();
+console.log(finalScore());*/
 
 //selecting the button elements
 const buttons = document.querySelectorAll("button");
 buttons.forEach((button)=> {
-    buttons.addEventListener("click", )
+    button.addEventListener("click", ()=> {
+        const humanChoice = button.id;
+        const computerChoice = getComputerChoice();
+        const result = playRound(humanChoice, computerChoice);
+        updateDisplay(result);
+    }    
+    )
 })
