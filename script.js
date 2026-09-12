@@ -82,3 +82,9 @@ const finalScore = () => {
 
 playGame();
 console.log(finalScore());
+
+//selecting the button elements
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button)=> {
+    buttons.addEventListener("click", )
+})
