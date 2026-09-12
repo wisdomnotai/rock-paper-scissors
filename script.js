@@ -58,7 +58,7 @@ const playround = (humanChoice, computerChoice) => {
     }
 }
 
-
+/*
 //creating the game play function
 const playGame = () => {
     for (let i = 0; i < 5; i++){
@@ -66,7 +66,7 @@ const playGame = () => {
         const computerSelection = getComputerChoice(); 
         console.log(playround(humanSelection, computerSelection));
     } 
-}
+}*/
 
 const finalScore = () => {
     if (humanScore > computerScore){
