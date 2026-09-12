@@ -103,7 +103,7 @@ const updateDisplay = (result) =>{
     resultsDiv.textContent = result;
     scoreDiv.textContent =  `You: ${humanScore}, Computer: ${computerScore}`;
     if (humanScore === 5 || computerScore === 5){
-        resultDiv.textContent = finalScore();
+        resultsDiv.textContent = finalScore();
         disableButtons();
     }
 }
